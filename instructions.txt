@@ -10,4 +10,4 @@ Pour être utilisé, il faut procéder aux réglages suivants :
     alimenter l'application.
 
 Il faut démarer le projet en exécutant le serveur local sur le port 8000 (par exemple) :
-  php -S localhost:8000 -t puplic
+  php -S localhost:8000 -t public

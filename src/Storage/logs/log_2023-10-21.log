@@ -1,0 +1,278 @@
+[2023-10-21 11:49:19]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 28
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM joueur
+                            WHERE id_joueur = '1'' at line 2'
+[2023-10-21 11:50:44]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 28
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM joueur
+                            WHERE id_joueur = '1'' at line 2'
+[2023-10-21 11:52:00]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 28
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM joueur
+                            WHERE id_joueur = '1'' at line 2'
+[2023-10-21 11:52:18]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 28
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM joueur
+                            WHERE id_joueur = '1'' at line 2'
+[2023-10-21 11:54:25]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 28
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM joueur
+                            WHERE id_joueur = '1'' at line 2'
+[2023-10-21 11:54:37]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 28
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM joueur
+                            WHERE id_joueur = '1'' at line 2'
+[2023-10-21 11:54:44]	[ALERT]	404 - commande non existante :: /joueur/
+[2023-10-21 11:54:49]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 28
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM joueur
+                            WHERE id_joueur = '1'' at line 2'
+[2023-10-21 11:55:28]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 28
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM joueur
+                            WHERE id_joueur = '1'' at line 2'
+[2023-10-21 11:55:32]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 28
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM joueur
+                            WHERE id_joueur = '1'' at line 2'
+[2023-10-21 11:55:38]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 28
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM joueur
+                            WHERE id_joueur = '1'' at line 2'
+[2023-10-21 11:55:43]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 28
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM joueur
+                            WHERE id_joueur = '1'' at line 2'
+[2023-10-21 11:55:48]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 28
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM joueur
+                            WHERE id_joueur = '1'' at line 2'
+[2023-10-21 11:58:13]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 28
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM joueur
+                            WHERE id_joueur = '1'' at line 2'
+[2023-10-21 11:58:16]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 28
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM joueur
+                            WHERE id_joueur = '1'' at line 2'
+[2023-10-21 11:59:01]	[ALERT]	404 - commande non existante :: /joueur/1
+[2023-10-21 11:59:20]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 28
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM joueur
+                            WHERE id_joueur = '1'' at line 2'
+[2023-10-21 12:00:11]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 28
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM joueur
+                            WHERE id_joueur = '1'' at line 2'
+[2023-10-21 12:00:15]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 28
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM joueur
+                            WHERE id_joueur = '1'' at line 2'
+[2023-10-21 12:03:22]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 28
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM joueur
+                            WHERE id_joueur = '1'' at line 2'
+[2023-10-21 12:03:44]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 28
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM joueur
+                            WHERE id_joueur = '1'' at line 2'
+[2023-10-21 12:04:20]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 28
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM joueur
+                            WHERE id_joueur = '1'' at line 2'
+[2023-10-21 12:04:48]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 28
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM joueur
+                            WHERE id_joueur = '1'' at line 2'
+[2023-10-21 12:04:59]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 28
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM joueur
+                            WHERE id_joueur = '1'' at line 2'
+[2023-10-21 12:05:14]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 28
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM joueur
+                            WHERE id_joueur = '1'' at line 2'

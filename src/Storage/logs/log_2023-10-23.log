@@ -1,0 +1,702 @@
+[2023-10-23 15:51:55]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 49
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'Unexpected "}".'
+[2023-10-23 15:52:32]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 49
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'Unexpected "}".'
+[2023-10-23 15:54:16]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 49
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'Unexpected "}".'
+[2023-10-23 15:55:04]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 49
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'Unexpected "}".'
+[2023-10-23 15:55:39]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 49
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'Unexpected "}".'
+[2023-10-23 15:56:37]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 49
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'Unexpected "}".'
+[2023-10-23 15:56:45]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 49
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'Unexpected "}".'
+[2023-10-23 15:56:53]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 49
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'Unexpected "}".'
+[2023-10-23 15:57:53]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 51
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'Unexpected "}".'
+[2023-10-23 15:58:26]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 51
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'Unexpected "}".'
+[2023-10-23 15:58:36]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 51
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'Unexpected "}".'
+[2023-10-23 15:58:53]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 43
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'Unexpected "}".'
+[2023-10-23 16:01:34]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 50
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'Unexpected "}".'
+[2023-10-23 16:02:00]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 50
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'Unexpected "}".'
+[2023-10-23 16:02:09]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 50
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'Unexpected "}".'
+[2023-10-23 16:02:58]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 50
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'Unexpected "}".'
+[2023-10-23 16:07:45]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 34
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'Unexpected "}".'
+[2023-10-23 16:13:02]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 34
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'Unknown "sort_by" filter.'
+[2023-10-23 17:04:43]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 29
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Controller\JoueurController.php'
+    exception-code: 'Undefined array key "cadavre_id"'
+[2023-10-23 17:04:58]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 29
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Controller\JoueurController.php'
+    exception-code: 'Undefined array key "cadavre_id"'
+[2023-10-23 17:06:09]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 29
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Controller\JoueurController.php'
+    exception-code: 'Undefined array key "cadavre_id"'
+[2023-10-23 17:06:47]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 29
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Controller\JoueurController.php'
+    exception-code: 'Undefined array key "cadavre_id"'
+[2023-10-23 17:07:28]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 29
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Controller\JoueurController.php'
+    exception-code: 'Undefined array key "cadavre_id"'
+[2023-10-23 17:08:00]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 29
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Controller\JoueurController.php'
+    exception-code: 'Undefined array key "cadavre_id"'
+[2023-10-23 17:08:19]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 44
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Controller\JoueurController.php'
+    exception-code: 'Undefined variable $hasPlayed'
+[2023-10-23 17:08:50]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 29
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Controller\JoueurController.php'
+    exception-code: 'Undefined array key "cadavre_id"'
+[2023-10-23 17:45:21]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 51
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'Unknown "path" function.'
+[2023-10-23 17:54:26]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 28
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Helper\HTTP.php'
+    exception-code: 'Cannot modify header information - headers already sent by (output started at C:\dev-apps\xampp-www\s5\s5-sae\loufok\vendor\digitalnature\php-ref\ref.php:2459)'
+[2023-10-23 17:54:47]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 28
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Helper\HTTP.php'
+    exception-code: 'Cannot modify header information - headers already sent by (output started at C:\dev-apps\xampp-www\s5\s5-sae\loufok\vendor\digitalnature\php-ref\ref.php:2459)'
+[2023-10-23 18:14:59]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:15:33]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:15:42]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:16:20]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:17:23]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:24:29]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:24:37]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:25:05]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:25:12]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:25:31]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:25:48]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:44:51]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:49:15]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:50:26]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:51:03]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:51:08]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:51:20]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:52:18]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:52:23]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:52:45]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:54:19]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:54:23]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:54:35]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:54:48]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:54:51]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:55:25]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:57:21]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:57:26]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:57:34]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 18:57:39]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 19:00:37]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 19:01:15]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 19:01:20]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 19:01:46]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 19:02:11]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 19:02:17]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 19:07:14]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 19:07:19]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 19:11:51]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 19:11:55]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 19:16:29]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 19:16:47]	[ALERT]	404 - commande non existante :: /joueur/1/add
+[2023-10-23 19:22:28]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 51
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'Unexpected token "punctuation" of value ")".'
+[2023-10-23 19:23:28]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 28
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Helper\HTTP.php'
+    exception-code: 'Cannot modify header information - headers already sent by (output started at C:\dev-apps\xampp-www\s5\s5-sae\loufok\vendor\digitalnature\php-ref\ref.php:2459)'
+[2023-10-23 21:22:50]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 37
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'Unexpected token "punctuation" of value "|" ("name" expected).'
+[2023-10-23 21:43:04]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 33
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'The sort filter only works with arrays or "Traversable", got "NULL".'
+[2023-10-23 21:44:30]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 33
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'The sort filter only works with arrays or "Traversable", got "NULL".'
+[2023-10-23 21:46:28]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 33
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'The sort filter only works with arrays or "Traversable", got "NULL".'
+[2023-10-23 21:48:11]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 33
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'The sort filter only works with arrays or "Traversable", got "NULL".'
+[2023-10-23 21:52:13]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 33
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'The sort filter only works with arrays or "Traversable", got "NULL".'
+[2023-10-23 21:52:19]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 33
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'The sort filter only works with arrays or "Traversable", got "NULL".'
+[2023-10-23 21:52:28]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 33
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'The sort filter only works with arrays or "Traversable", got "NULL".'
+[2023-10-23 21:53:00]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 33
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'The sort filter only works with arrays or "Traversable", got "NULL".'
+[2023-10-23 21:53:13]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 33
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'The sort filter only works with arrays or "Traversable", got "NULL".'
+[2023-10-23 21:54:32]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 33
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'The sort filter only works with arrays or "Traversable", got "NULL".'
+[2023-10-23 21:55:52]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 33
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'The sort filter only works with arrays or "Traversable", got "NULL".'
+[2023-10-23 21:57:31]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 33
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'The sort filter only works with arrays or "Traversable", got "NULL".'
+[2023-10-23 22:00:10]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 33
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'The sort filter only works with arrays or "Traversable", got "NULL".'
+[2023-10-23 22:00:20]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 33
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'The sort filter only works with arrays or "Traversable", got "NULL".'
+[2023-10-23 22:00:58]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 33
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'The sort filter only works with arrays or "Traversable", got "NULL".'
+[2023-10-23 22:17:14]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 33
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'The sort filter only works with arrays or "Traversable", got "NULL".'
+[2023-10-23 22:17:52]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 33
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'The sort filter only works with arrays or "Traversable", got "NULL".'
+[2023-10-23 22:18:17]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 33
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'The sort filter only works with arrays or "Traversable", got "NULL".'
+[2023-10-23 22:26:18]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 33
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'The sort filter only works with arrays or "Traversable", got "NULL".'
+[2023-10-23 22:28:19]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 33
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'The sort filter only works with arrays or "Traversable", got "NULL".'
+[2023-10-23 22:28:43]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 33
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'The sort filter only works with arrays or "Traversable", got "NULL".'
+[2023-10-23 22:29:17]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 33
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'The sort filter only works with arrays or "Traversable", got "NULL".'
+[2023-10-23 22:29:32]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 33
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'The sort filter only works with arrays or "Traversable", got "NULL".'
+[2023-10-23 22:30:22]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 33
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'The sort filter only works with arrays or "Traversable", got "NULL".'
+[2023-10-23 22:30:33]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 33
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'The sort filter only works with arrays or "Traversable", got "NULL".'
+[2023-10-23 22:32:16]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 33
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'The sort filter only works with arrays or "Traversable", got "NULL".'
+[2023-10-23 22:45:09]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 61
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'Unexpected "endblock" tag (expecting closing tag for the "if" tag defined near line 32).'
+[2023-10-23 22:46:36]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 61
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\cadavre.html.twig'
+    exception-code: 'Unexpected "endblock" tag (expecting closing tag for the "if" tag defined near line 32).'

@@ -1,0 +1,70 @@
+{% extends 'layout.html.twig' %}
+{% block title %}
+	Ancien cadavre -
+	{{ parent() }}
+{% endblock %}
+{% block content %}
+
+	<link href="/assets/styles/main.css" rel="stylesheet" type="text/css"/>
+	<header class="header">
+		<div class="header__user">Bienvenue,
+			<span class="header_user--bold">{{player.nom_plume}}</span>
+		</div>
+		<p class="header__nameApp">Loufok</p>
+		<nav class="header__nav">
+			<ul>
+				<li class="hearder__navItem">
+					<a href="{{ url('/disconnect') }}" aria-label="Déconnexion de votre profil">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"><path fill="currentColor" d="M5 21q-.825 0-1.413-.588T3 19V5q0-.825.588-1.413T5 3h6q.425 0 .713.288T12 4q0 .425-.288.713T11 5H5v14h6q.425 0 .713.288T12 20q0 .425-.288.713T11 21H5Zm12.175-8H10q-.425 0-.713-.288T9 12q0-.425.288-.713T10 11h7.175L15.3 9.125q-.275-.275-.275-.675t.275-.7q.275-.3.7-.313t.725.288L20.3 11.3q.3.3.3.7t-.3.7l-3.575 3.575q-.3.3-.713.288t-.712-.313q-.275-.3-.263-.713t.288-.687l1.85-1.85Z"/></svg>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section class="oldCadavre">
+
+			<div>
+				<h1>Consulter votre dernier cadavre exquis</h1>
+				<p>Voyez ce que les autres ont réalisé avec ce cadavre exquis !
+				</p>
+			</div>
+
+			<a class="backLink" href="{{ url('/joueur/' ~ player.id_joueur)}}">Retour à la page principale</a>
+
+
+			{% set playerNames = [] %}
+			<div>
+				<h2>{{data.cadavre.titre_cadavre}}</h2>
+				<ul>
+					{% for contribution in data.contributions %}
+
+
+						<li>{{ contribution.texte_contribution }}</li>
+
+						{% set playerName = contribution.nom_plume %}
+						{% if playerName is defined and playerName not in playerNames %}
+							{% set playerNames = playerNames|merge([playerName]) %}
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</div>
+			{% set sortedPlayerNames = playerNames|sort %}
+			<div>
+				<h2>Remerciements aux particpants</h2>
+				<ul>
+					{% for playerName in sortedPlayerNames %}
+						<li>
+							<svg width="104" height="23" viewbox="0 0 104 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19.2077 22.0892C33.927 24.4031 41.6501 20.9303 44.8707 17.311C46.7988 15.1442 45.0834 11.9956 42.1878 12.1618C38.8815 12.3515 35.7481 14.3067 33.8299 16.912C31.5935 19.9493 28.024 20.9387 26.5188 21.0538C9.14426 22.0202 1.93354 7.42059 0.5 0C1.53215 14.496 13.4019 20.7661 19.2077 22.0892Z" fill="#28292D"/>
+								<path d="M83.4882 22.2521C67.0938 24.5537 59.1505 21.1357 55.9119 17.526C53.9336 15.3209 55.7536 12.1372 58.7142 12.2429C62.3213 12.3716 65.7576 14.3648 67.8467 17.0368C70.239 20.0965 74.0573 21.0932 75.6675 21.2091C94.2532 22.1826 101.967 7.47532 103.5 0C102.396 14.603 89.6987 20.9193 83.4882 22.2521Z" fill="#28292D"/>
+							</svg>
+							{{ playerName }}</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</section>
+
+	</main>
+{% endblock %}

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : jeu. 19 oct. 2023 à 22:00
+-- Généré le : sam. 21 oct. 2023 à 13:51
 -- Version du serveur : 10.4.24-MariaDB
 -- Version de PHP : 8.1.6
 
@@ -130,6 +130,34 @@ ALTER TABLE `contribution_aléatoiree`
 --
 ALTER TABLE `joueur`
   ADD PRIMARY KEY (`id_joueur`);
+
+--
+-- AUTO_INCREMENT pour les tables déchargées
+--
+
+--
+-- AUTO_INCREMENT pour la table `administrateur`
+--
+ALTER TABLE `administrateur`
+  MODIFY `id_administrateur` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT pour la table `cadavre`
+--
+ALTER TABLE `cadavre`
+  MODIFY `id_cadavre` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT pour la table `contribution`
+--
+ALTER TABLE `contribution`
+  MODIFY `id_contribution` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT pour la table `joueur`
+--
+ALTER TABLE `joueur`
+  MODIFY `id_joueur` smallint(6) NOT NULL AUTO_INCREMENT;
 
 --
 -- Contraintes pour les tables déchargées

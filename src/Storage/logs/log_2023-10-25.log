@@ -1,0 +1,44 @@
+[2023-10-25 0:04:39]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@old',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 18
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\old_cadavre.html.twig'
+    exception-code: 'An exception has been thrown during the rendering of a template ("Array to string conversion").'
+[2023-10-25 0:05:55]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@old',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 18
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\old_cadavre.html.twig'
+    exception-code: 'Expected name or number, got value "[" of type punctuation.'
+[2023-10-25 0:08:52]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@old',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 19
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\old_cadavre.html.twig'
+    exception-code: 'An exception has been thrown during the rendering of a template ("Array to string conversion").'
+[2023-10-25 0:09:51]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@old',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 19
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\old_cadavre.html.twig'
+    exception-code: 'An exception has been thrown during the rendering of a template ("Array to string conversion").'

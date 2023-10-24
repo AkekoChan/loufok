@@ -1,0 +1,18 @@
+{% extends 'layout.html.twig' %}
+{% block title %}
+	Erreur -
+	{{ parent() }}
+{% endblock %}
+{% block content %}
+	<link href="/assets/styles/main.css" rel="stylesheet" type="text/css"/>
+	<main>
+		<section class="error">
+			<picture class="error__img">
+				<source srcset="/assets/img/dali.webp" type="image/webp">
+				<img src="/assets/img/dali.jpeg" alt="Salvador Dali qui nous regarde avec des grands yeux" loading="lazy">
+			</picture>
+			<p class="error__message">Votre contribution doit contenir entre 50 et 240 caractères.</p>
+			<a class="backLink" href="{{ url('/joueur/' ~ idJoueur)}}">Retour à votre cadavre</a>
+		</section>
+	</main>
+{% endblock %}

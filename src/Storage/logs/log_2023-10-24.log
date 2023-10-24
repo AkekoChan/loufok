@@ -1,0 +1,38 @@
+[2023-10-24 23:16:50]	[ALERT]	404 - commande non existante :: /cadavre/1/old
+[2023-10-24 23:18:22]	[ALERT]	404 - commande non existante :: /cadavre/1/old
+[2023-10-24 23:19:11]	[ALERT]	404 - commande non existante :: /cadavre/1/old
+[2023-10-24 23:20:37]	[ALERT]	404 - commande non existante :: /cadavre/1/old
+[2023-10-24 23:20:51]	[ALERT]	404 - commande non existante :: /cadavre/1/old
+[2023-10-24 23:21:24]	[ALERT]	404 - commande non existante :: /cadavre/1/old
+[2023-10-24 23:22:53]	[ALERT]	404 - commande non existante :: /cadavre/1/old
+[2023-10-24 23:23:06]	[ALERT]	404 - commande non existante :: /cadavre/1/old
+[2023-10-24 23:23:19]	[ALERT]	404 - commande non existante :: /cadavre/1/old
+[2023-10-24 23:23:43]	[ALERT]	404 - commande non existante :: /cadavre/1/old
+[2023-10-24 23:23:48]	[ALERT]	404 - commande non existante :: /cadavre/1/old
+[2023-10-24 23:23:57]	[ALERT]	404 - commande non existante :: /cadavre/1/old
+[2023-10-24 23:24:03]	[ALERT]	404 - commande non existante :: /cadavre/1/old
+[2023-10-24 23:24:25]	[ALERT]	404 - commande non existante :: /cadavre/1/old
+[2023-10-24 23:24:44]	[ALERT]	404 - commande non existante :: /cadavre/1/old
+[2023-10-24 23:24:57]	[ALERT]	404 - commande non existante :: /cadavre/1/old
+[2023-10-24 23:35:09]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@old',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 187
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.nom_administrateur' in 'field list''
+[2023-10-24 23:37:55]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@old',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 187
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.nom_administrateur' in 'field list''
