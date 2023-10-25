@@ -18,4 +18,10 @@ return [
   ['GET', '/error', 'joueur@error'],
   ['GET', '/cadavre/{idJoueur}/old', "joueur@old"],
 
+  ["GET", "/administrateur/{id}", "administrateur@index"],
+  ['POST', '/administrateur/add/{idAdministrateur}', 'administrateur@add'],
+
+
+
+
 ];

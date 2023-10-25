@@ -1,0 +1,64 @@
+{% extends 'layout.html.twig' %}
+{% block title %}
+	Gestion administrateur -
+	{{ parent() }}
+{% endblock %}
+{% block content %}
+
+	<link href="/assets/styles/main.css" rel="stylesheet" type="text/css"/>
+	<header class="header">
+		<div class="header__user">Bienvenue,
+			<span class="header_user--bold">{{admin.nom_plume}}</span>
+		</div>
+		<p class="header__nameApp">Loufok</p>
+		<nav class="header__nav">
+			<ul>
+				<li class="hearder__navItem">
+					<a href="{{ url('/disconnect') }}" aria-label="Déconnexion de votre profil">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"><path fill="currentColor" d="M5 21q-.825 0-1.413-.588T3 19V5q0-.825.588-1.413T5 3h6q.425 0 .713.288T12 4q0 .425-.288.713T11 5H5v14h6q.425 0 .713.288T12 20q0 .425-.288.713T11 21H5Zm12.175-8H10q-.425 0-.713-.288T9 12q0-.425.288-.713T10 11h7.175L15.3 9.125q-.275-.275-.275-.675t.275-.7q.275-.3.7-.313t.725.288L20.3 11.3q.3.3.3.7t-.3.7l-3.575 3.575q-.3.3-.713.288t-.712-.313q-.275-.3-.263-.713t.288-.687l1.85-1.85Z"/></svg>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		{% if errorMessage %}
+			<section class="error">
+				<picture class="error__img">
+					<source srcset="/assets/img/dali.webp" type="image/webp">
+					<img src="/assets/img/dali.jpeg" alt="Salvador Dali qui nous regarde avec des grands yeux" loading="lazy">
+				</picture>
+				<p class="error__message">{{errorMessage}}</p>
+			</section>
+		{% else %}
+			<section class="dashboard">
+				<div>
+					<h1 class="title__bigger">Fabrication d’un cadavre exquis</h1>
+					<p class="paragraph">Vous ne pouvez créer qu’un cadavre exquis à la fois !</p>
+				</div>
+
+				<form method="POST" action="{{ url('/administrateur/add/' ~ admin.id_administrateur ) }}" class="form">
+					<div class="datas__wrapper">
+						<h3 class="title__smaller">Votre cadavre exquis</h3>
+						<input class="form__input" type="text" name="title" placeholder="Titre du cadavre exquis" minlength="3" maxlength="100" required>
+						<textarea class="form__textarea" name="first-contribution" minlength="50" maxlength="280" placeholder="Texte du cadavre exquis" required></textarea>
+					</div>
+					<div class="date__wrapper">
+						<h3 class="title__smaller">La période de jeu</h3>
+						<div>
+							<label class="form__label" for="start-date">Date de début du jeu :</label>
+							<input class="form__inputDate" type="date" name="start-date" required>
+
+						</div>
+						<div>
+							<label class="form__label" for="end-date">Date de fin du jeu :</label>
+							<input class="form__inputDate" type="date" name="end-date" required>
+						</div>
+					</div>
+					<button type="submit" class="form__btn">Enregistrer</button>
+				</form>
+			</section>
+		{% endif %}
+	</main>
+
+{% endblock %}

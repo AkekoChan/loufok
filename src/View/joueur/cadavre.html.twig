@@ -35,8 +35,8 @@
 			<section class="contribution">
 
 				<div>
-					<h1>Contribuer à votre manière</h1>
-					<p>Les petites moustaches symbolisent les autres contributions. A vous d’ajouter votre petite pierre !
+					<h1 class="title__bigger">Contribuer à votre manière</h1>
+					<p class="paragraph">Les petites moustaches symbolisent les autres contributions. A vous d’ajouter votre petite pierre !
 					</p>
 				</div>
 
@@ -59,8 +59,8 @@
 					{% endfor %}
 
 					{% if hasPlayed == false %}
-						<form class="form" id="contribution-form" method="POST" action="{{ url('/joueur/add/' ~ player.id_joueur ) }}">
-							<textarea class="form__textarea" id="new_contribution" name="new_contribution" required maxlength="280" minlength="50" placeholder="Ecriver la suite de ce cadavre exquis"></textarea>
+						<form class="form" method="POST" action="{{ url('/joueur/add/' ~ player.id_joueur ) }}">
+							<textarea class="form__textarea" name="new_contribution" required maxlength="280" minlength="50" placeholder="Ecriver la suite de ce cadavre exquis"></textarea>
 							<button class="form__btn" type="submit">Soumettre votre cadavre exquis</button>
 						</form>
 					{% endif %}

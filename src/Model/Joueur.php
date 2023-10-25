@@ -32,39 +32,66 @@ class Joueur extends Model
         return $sth->fetch();
     }
 
-    public static function checkFirstConnexion($id)
+    public static function checkFirstConnexion($idJoueur)
     {
-        $sql = "SELECT COUNT(*) as count FROM contribution_aléatoiree WHERE id_joueur = :joueurId";
+        // 1. Trouver le cadavre en cours
+        $cadavreInProgress = self::isCadavreInProgress();
 
-        $sth = self::$dbh->prepare($sql);
-        $sth->bindParam(':joueurId', $id);
-        $sth->execute();
-        $result = $sth->fetch();
+        if (!$cadavreInProgress) {
+            // Pas de cadavre en cours
+            return false;
+        }
 
-        echo "Résultat de la requête : " . $result['count']; // Affiche le résultat de la requête
+        $cadavreId = $cadavreInProgress[0]['id_cadavre'];
 
-        if ($result['count'] == '0') {
-            echo "C'est la première connexion du joueur.";
-            $randomContribution = self::getRandomContribution();
+        // 2. Obtenir les contributions associées à ce cadavre
+        $contributionsForCadavre = self::getContributionsForCadavre($cadavreId);
 
-            self::assignRandomContributionToPlayer($id, $randomContribution);
+        // 3. Sélectionner une contribution aléatoire parmi les contributions disponibles
+        $randomContribution = self::selectRandomContribution($contributionsForCadavre);
 
-            return self::getContributionByPlayer($id);
+        // 4. Vérifier si le joueur a déjà reçu cette contribution
+        if (!self::hasPlayerReceivedContribution($idJoueur, $randomContribution['id_contribution'])) {
+            // 5. Insérer la contribution aléatoire sélectionnée pour le joueur
+            self::assignRandomContributionToPlayer($idJoueur, $randomContribution);
+
+            return self::getContributionByPlayer($idJoueur);
         } else {
-            echo "Le joueur a déjà des contributions.";
 
-            return self::getContributionByPlayer($id);
+            return self::getContributionByPlayer($idJoueur);
         }
     }
 
-    public static function getRandomContribution()
+    public static function getContributionsForCadavre($cadavreId)
     {
-        $sql = "SELECT * FROM contribution ORDER BY RAND() LIMIT 1";
+        $sql = "SELECT id_contribution, texte_contribution, id_cadavre FROM contribution WHERE id_cadavre = :cadavreId";
         $sth = self::$dbh->prepare($sql);
+        $sth->bindParam(':cadavreId', $cadavreId);
         $sth->execute();
 
-        return $sth->fetch();
+        return $sth->fetchAll();
     }
+
+    public static function selectRandomContribution($contributions)
+    {
+        // Sélectionnez une contribution aléatoire parmi les contributions disponibles
+        $randomIndex = array_rand($contributions);
+        return $contributions[$randomIndex];
+    }
+
+    public static function hasPlayerReceivedContribution($joueurId, $contributionId)
+    {
+        $sql = "SELECT COUNT(*) as count FROM contribution_aléatoiree WHERE id_joueur = :joueurId AND num_contribution = :contributionId";
+        $sth = self::$dbh->prepare($sql);
+        $sth->bindParam(':joueurId', $joueurId);
+        $sth->bindParam(':contributionId', $contributionId);
+        $sth->execute();
+
+        $result = $sth->fetch();
+
+        return $result['count'] > 0;
+    }
+
 
     public static function assignRandomContributionToPlayer($joueurId, $contribution)
     {
@@ -78,26 +105,20 @@ class Joueur extends Model
 
     public static function getContributionByPlayer($joueurId)
     {
-        $sql = "SELECT * FROM contribution_aléatoiree WHERE id_joueur = :joueurId";
+        $sql = "SELECT c.*, ca.id_cadavre
+        FROM contribution_aléatoiree ca
+        JOIN contribution c ON ca.num_contribution = c.id_contribution
+        JOIN cadavre cad ON c.id_cadavre = cad.id_cadavre
+        WHERE ca.id_joueur = :joueurId
+        AND cad.date_debut_cadavre <= NOW()
+        AND cad.date_fin_cadavre >= NOW()
+        LIMIT 1";
+
         $sth = self::$dbh->prepare($sql);
         $sth->bindParam(':joueurId', $joueurId);
         $sth->execute();
 
-        $result = $sth->fetch();
-
-        if ($result) {
-            // Si le joueur a une contribution, récupérez les informations de la contribution
-            $contributionNum = $result['num_contribution'];
-            $idCadavre = $result['id_cadavre'];
-
-            $sql = "SELECT * FROM contribution WHERE id_contribution = :contributionNum AND id_cadavre = :idCadavre";
-            $sth = self::$dbh->prepare($sql);
-            $sth->bindParam(':contributionNum', $contributionNum);
-            $sth->bindParam(':idCadavre', $idCadavre);
-            $sth->execute();
-
-            return $sth->fetch();
-        }
+        return $sth->fetch();
     }
 
     public static function isCadavreInProgress()
@@ -111,7 +132,6 @@ class Joueur extends Model
         $cadavreInProgress = $sth->fetchAll();
 
         if ($cadavreInProgress) {
-            // Le cadavre est en cours, retournez-le avec ses contributions
             return $cadavreInProgress;
         } else {
             return false;
@@ -159,12 +179,19 @@ class Joueur extends Model
             $nouvelOrdre = $order[0]['last_order'] + 1;
             $cadavreId = $order[0]['id_cadavre'];
 
+            // Insérer la contribution dans la table contribution
             $sql = "INSERT INTO contribution (texte_contribution, date_soumission, ordre_soumission, id_joueur, id_cadavre)
                 VALUES (:texte_contribution, NOW(), :nouvel_ordre, :joueurId, :cadavreId)";
             $sth = self::$dbh->prepare($sql);
             $sth->bindParam(':texte_contribution', $texteContribution);
             $sth->bindParam(':nouvel_ordre', $nouvelOrdre);
             $sth->bindParam(':joueurId', $joueurId);
+            $sth->bindParam(':cadavreId', $cadavreId);
+            $sth->execute();
+
+            // Mettre à jour le nombre de contributions dans la table cadavre
+            $sql = "UPDATE cadavre SET nb_contributions = nb_contributions + 1 WHERE id_cadavre = :cadavreId";
+            $sth = self::$dbh->prepare($sql);
             $sth->bindParam(':cadavreId', $cadavreId);
             $sth->execute();
         }

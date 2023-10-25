@@ -42,3 +42,80 @@
     exception-line: 19
     exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\View\joueur\old_cadavre.html.twig'
     exception-code: 'An exception has been thrown during the rendering of a template ("Array to string conversion").'
+[2023-10-25 14:17:34]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@add',
+        2 => array(
+            'idJoueur' => '1',
+        ),
+    )
+    exception-line: 176
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nombre_contributions' in 'field list''
+[2023-10-25 22:18:42]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'administrateur@add',
+        2 => array(
+            'idAdministrateur' => '2',
+        ),
+    )
+    exception-line: 48
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Controller\AdministrateurController.php'
+    exception-code: 'Undefined array key "contribution"'
+[2023-10-25 22:21:45]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'administrateur@add',
+        2 => array(
+            'idAdministrateur' => '2',
+        ),
+    )
+    exception-line: 48
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Controller\AdministrateurController.php'
+    exception-code: 'Undefined array key "contribution"'
+[2023-10-25 22:22:11]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'administrateur@add',
+        2 => array(
+            'idAdministrateur' => '2',
+        ),
+    )
+    exception-line: 48
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Controller\AdministrateurController.php'
+    exception-code: 'Undefined array key "contribution"'
+[2023-10-25 23:49:11]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'administrateur@add',
+        2 => array(
+            'idAdministrateur' => '2',
+        ),
+    )
+    exception-line: 63
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Administrateur.php'
+    exception-code: 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id_administrateur) VALUES ('dzdzdzdzdz', '2023-10-25', '2023-10-31',  1 , '2')' at line 1'
+[2023-10-25 23:50:01]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'administrateur@add',
+        2 => array(
+            'idAdministrateur' => '2',
+        ),
+    )
+    exception-line: 28
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Helper\HTTP.php'
+    exception-code: 'Cannot modify header information - headers already sent by (output started at C:\dev-apps\xampp-www\s5\s5-sae\loufok\vendor\digitalnature\php-ref\ref.php:2459)'
+[2023-10-25 23:50:23]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'administrateur@add',
+        2 => array(
+            'idAdministrateur' => '2',
+        ),
+    )
+    exception-line: 28
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Helper\HTTP.php'
+    exception-code: 'Cannot modify header information - headers already sent by (output started at C:\dev-apps\xampp-www\s5\s5-sae\loufok\vendor\digitalnature\php-ref\ref.php:2459)'

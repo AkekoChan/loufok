@@ -24,14 +24,10 @@ class JoueurController extends Controller
                 $player = Joueur::getInstance()->getPlayer($id);
 
                 if ($cadavreInProgress) {
-                    $contribution = Joueur::getInstance()->checkFirstConnexion($id);
                     $cadavreContributions = $cadavreInProgress;
+                    $contribution = Joueur::getInstance()->checkFirstConnexion($id);
                     $hasPlayed = Joueur::getInstance()->hasPlayerContributedToCadavre($id, $cadavreContributions[0]["id_cadavre"]);
-                    $errorMessage = null;
                 } else {
-                    $contribution = null;
-                    $cadavreContributions = null;
-                    $hasPlayed = null;
                     $errorMessage = "IL N'Y A RIEN À VOIR ICI ! AUCUNE FABRICATION DE CADAVRE EN COURS...";
                 }
 
@@ -39,10 +35,10 @@ class JoueurController extends Controller
                     'joueur/cadavre.html.twig',
                     [
                         'player' => $player,
-                        'contribution' => $contribution,
-                        'cadavreContributions' => $cadavreContributions,
-                        'hasPlayed' => $hasPlayed,
-                        'errorMessage' => $errorMessage,
+                        'contribution' => $contribution ?? null,
+                        'cadavreContributions' => $cadavreContributions ?? null,
+                        'hasPlayed' => $hasPlayed ?? null,
+                        'errorMessage' => $errorMessage ?? null,
                     ]
                 );
             }
