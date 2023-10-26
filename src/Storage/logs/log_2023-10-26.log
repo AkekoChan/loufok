@@ -196,3 +196,146 @@
     exception-line: 103
     exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
     exception-code: 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-8' for key 'PRIMARY''
+[2023-10-26 1:44:28]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 103
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-8' for key 'PRIMARY''
+[2023-10-26 1:44:44]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 103
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-8' for key 'PRIMARY''
+[2023-10-26 1:46:25]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 103
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-8' for key 'PRIMARY''
+[2023-10-26 1:46:37]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 103
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-8' for key 'PRIMARY''
+[2023-10-26 1:46:46]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 103
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-8' for key 'PRIMARY''
+[2023-10-26 1:46:54]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 103
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-8' for key 'PRIMARY''
+[2023-10-26 1:48:15]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 103
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-8' for key 'PRIMARY''
+[2023-10-26 1:55:40]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 101
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-8' for key 'PRIMARY''
+[2023-10-26 1:57:48]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 101
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-8' for key 'PRIMARY''
+[2023-10-26 1:59:10]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 101
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-8' for key 'PRIMARY''
+[2023-10-26 2:00:17]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 103
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-8' for key 'PRIMARY''
+[2023-10-26 2:00:35]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 105
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-8' for key 'PRIMARY''
+[2023-10-26 2:01:20]	[ALERT]	404 - erreur dans le processus de traitement du routage
+    routeInfo: array(
+        0 => 1,
+        1 => 'joueur@index',
+        2 => array(
+            'id' => '1',
+        ),
+    )
+    exception-line: 107
+    exception-file: 'C:\dev-apps\xampp-www\s5\s5-sae\loufok\src\Model\Joueur.php'
+    exception-code: 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-8' for key 'PRIMARY''

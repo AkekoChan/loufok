@@ -19,6 +19,12 @@ class Administrateur extends Model
         return self::$instance;
     }
 
+    /**
+     * Récupère les informations de l'administrateur.
+     *
+     * @param [type] $id
+     * @return array|false Les informations de l'administrateur ou false en cas d'erreur.
+     */
     public static function getAdmin($id)
     {
         $sql = "SELECT id_administrateur, ad_mail_administrateur, nom_plume
@@ -32,6 +38,11 @@ class Administrateur extends Model
         return $sth->fetch();
     }
 
+    /**
+     * Vérifie le statut du cadavre en cours.
+     *
+     * @return bool True s'il y a un cadavre en cours, sinon false.
+     */
     public static function checkCadavreStatus()
     {
         $sql = 'SELECT COUNT(*) as count
@@ -49,6 +60,16 @@ class Administrateur extends Model
         }
     }
 
+    /**
+     * Ajoute un nouveau cadavre avec la première contribution.
+     *
+     * @param [type] $idAdmin
+     * @param [type] $title
+     * @param [type] $firstContribution
+     * @param [type] $startDate
+     * @param [type] $endDate
+     * @return void
+     */
     public static function addCadavre($idAdmin, $title, $firstContribution, $startDate, $endDate)
     {
 

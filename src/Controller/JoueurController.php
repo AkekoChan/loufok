@@ -11,6 +11,12 @@ use App\Model\Joueur;
 
 class JoueurController extends Controller
 {
+    /**
+     * Affiche la page du joueur actuel, gère les connexions initiales et les contributions.
+     *
+     * @param [type] $id
+     * @return void
+     */
     public function index($id)
     {
 
@@ -47,6 +53,12 @@ class JoueurController extends Controller
         }
     }
 
+    /**
+     * Gère l'ajout d'une nouvelle contribution par le joueur.
+     *
+     * @param [type] $idJoueur
+     * @return void
+     */
     public function add($idJoueur)
     {
         $idJoueur = $_SESSION['user_id'];
@@ -60,6 +72,11 @@ class JoueurController extends Controller
         }
     }
 
+    /**
+     * Affiche une page d'erreur en cas de contribution incorrecte.
+     *
+     * @return void
+     */
     public function error()
     {
         $this->display('joueur/error_contribution.html.twig', [
@@ -67,6 +84,12 @@ class JoueurController extends Controller
         ]);
     }
 
+    /**
+     * Affiche les anciennes participations du joueur.
+     *
+     * @param [type] $idJoueur
+     * @return void
+     */
     public function old($idJoueur)
     {
         $player = Joueur::getInstance()->getPlayer($idJoueur);

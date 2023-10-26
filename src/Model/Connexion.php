@@ -18,6 +18,13 @@ class Connexion extends Model
         return self::$instance;
     }
 
+    /**
+     * Authentifie un utilisateur en vérifiant son email et son mot de passe.
+     *
+     * @param string $email L'adresse email de l'utilisateur.
+     * @param string $password Le mot de passe de l'utilisateur.
+     * @return array|false Les informations de l'utilisateur authentifié ou false en cas d'échec d'authentification.
+     */
     public function authenticateUser($email, $password)
     {
         $sql = "SELECT id_joueur AS id, ad_mail_joueur AS email, mot_de_passe_joeur AS mot_de_passe, 'joueur' AS type

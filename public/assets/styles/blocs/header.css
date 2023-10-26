@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 1.2rem;
+  background: var(--white);
+  border-bottom: 1px solid #f7f7f7;
+
+  & > * {
+    flex: 1 33.33%;
+  }
+}
+
+.header__user {
+  color: var(--black);
+}
+
+.header__user--bold {
+  font-weight: bold;
+}
+
+.header__nameApp {
+  display: flex;
+  justify-content: center;
+  color: var(--black);
+  font-family: "Bodoni Moda", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: flex-end;
+
+  & ul {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  & path {
+    fill: var(--black);
+  }
+}

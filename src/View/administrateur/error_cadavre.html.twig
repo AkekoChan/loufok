@@ -13,12 +13,12 @@
 			</picture>
 			<ul>
 				{% for error in errors %}
-					<li>
-						<p class="error__paragraph">{{ error }}</p>
+					<li class="error__message">
+						{{ error }}
 					</li>
 				{% endfor %}
 			</ul>
-			<a class="backLink " href="{{ url('/administrateur/' ~ idAdmin)}}">Retour à la page principale</a>
+			<a class="backLink" href="{{ url('/administrateur/' ~ idAdmin)}}">Retour à la page principale</a>
 		</section>
 	</main>
 {% endblock %}

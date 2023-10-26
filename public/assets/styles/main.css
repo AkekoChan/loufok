@@ -2,8 +2,18 @@
 @import "vendors/reset.css";
 @import "global/fonts.css";
 
+@import "blocs/header.css";
+@import "blocs/contribution.css";
+@import "blocs/form.css";
+@import "blocs/oldCadavre.css";
+@import "blocs/error.css";
+@import "blocs/auth.css";
+@import "blocs/dashboard.css";
+
 * {
   box-sizing: border-box;
+  font-size: 100%;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -23,15 +33,76 @@ h5,
 h6 {
   font-family: "Bodoni Moda", sans-serif;
   font-weight: bold;
+  color: var(--black);
+}
+
+p {
+  color: var(--black);
 }
 
 html,
 button,
-input::placeholder {
+input::placeholder,
+textarea::placeholder,
+input,
+textarea {
   font-family: "Sen", sans-serif;
 }
 
 body {
   width: clamp(320px, 50%, 1200px);
+  height: 100vh;
   margin: 0 auto;
+  background-image: url(/assets/img/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
+.title__bigger {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.title__smaller {
+  font-size: 1.25rem;
+}
+
+.paragraph {
+  text-align: center;
+}
+
+.contributionText {
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  border: 2px solid var(--light-gray);
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+}
+
+.backLink {
+  font-family: "Bodoni Moda", sans-serif;
+  font-size: 1.125rem;
+  color: var(--black);
+}
+
+.scroll__btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 2%;
+  right: 5%;
+  background: var(--black);
+  border-radius: 0.375rem;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  cursor: pointer;
+
+  & path {
+    fill: var(--white);
+  }
 }

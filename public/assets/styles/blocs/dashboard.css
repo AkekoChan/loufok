@@ -1,0 +1,18 @@
+.dashboard {
+  margin-top: 6rem;
+}
+
+.dashboard__top {
+  margin-bottom: 1.25rem;
+}
+
+.datas__wrapper,
+.date__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.datas__wrapper {
+  margin-bottom: 2rem;
+}

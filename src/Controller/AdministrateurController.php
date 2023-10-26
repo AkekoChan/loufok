@@ -11,6 +11,12 @@ use App\Model\Administrateur;
 
 class AdministrateurController extends Controller
 {
+    /**
+     * Affiche la page d'accueil de l'administrateur.
+     *
+     * @param [type] $id
+     * @return void
+     */
     public function index($id)
     {
         if (isset($_SESSION['role'])) {
@@ -40,6 +46,12 @@ class AdministrateurController extends Controller
         }
     }
 
+    /**
+     * Ajoute un nouveau cadavre et sa première contribution.
+     *
+     * @param [type] $idAdministrateur
+     * @return void
+     */
     public function add($idAdministrateur)
     {
         $title = trim($_POST['title']);
@@ -71,7 +83,7 @@ class AdministrateurController extends Controller
                 array_push($errors, "VOTRE CONTRIBUTION DOIT COMPRENDRE ENTRE 50 ET 280 CARACTERES !");
                 break;
 
-            case empty($startDate) || strtotime($startDate) >= time():
+            case empty($startDate) || strtotime($startDate) < time():
                 array_push($errors, "VOTRE DATE DE DEBUT DE CADAVRE EST INVALIDE !");
                 break;
 

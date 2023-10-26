@@ -19,6 +19,12 @@ class Joueur extends Model
         return self::$instance;
     }
 
+    /**
+     * Récupère les informations du joueur.
+     *
+     * @param [type] $id
+     * @return array|false Les informations du joueur ou false en cas d'erreur.
+     */
     public static function getPlayer($id)
     {
         $sql = "SELECT id_joueur, ad_mail_joueur, sexe, ddn, nom_plume
@@ -32,36 +38,39 @@ class Joueur extends Model
         return $sth->fetch();
     }
 
+    /**
+     * Gère la première connexion du joueur, attribue des contributions aléatoires.
+     *
+     * @param [type] $idJoueur
+     * @return array|false Les contributions attribuées au joueur ou false en cas d'erreur.
+     */
     public static function checkFirstConnexion($idJoueur)
     {
-        // 1. Trouver le cadavre en cours
         $cadavreInProgress = self::isCadavreInProgress();
 
         if (!$cadavreInProgress) {
-            // Pas de cadavre en cours
             return false;
-        }
-
-        $cadavreId = $cadavreInProgress[0]['id_cadavre'];
-
-        // 2. Obtenir les contributions associées à ce cadavre
-        $contributionsForCadavre = self::getContributionsForCadavre($cadavreId);
-
-        // 3. Sélectionner une contribution aléatoire parmi les contributions disponibles
-        $randomContribution = self::selectRandomContribution($contributionsForCadavre);
-
-        // 4. Vérifier si le joueur a déjà reçu cette contribution
-        if (!self::hasPlayerReceivedContribution($idJoueur, $randomContribution['id_contribution'])) {
-            // 5. Insérer la contribution aléatoire sélectionnée pour le joueur
-            self::assignRandomContributionToPlayer($idJoueur, $randomContribution);
-
-            return self::getContributionByPlayer($idJoueur);
         } else {
+            $cadavreId = $cadavreInProgress[0]['id_cadavre'];
+
+            $contributionsForCadavre = self::getContributionsForCadavre($cadavreId);
+
+            if (self::hasPlayerReceivedContribution($idJoueur, $cadavreId)) {
+                $randomContribution = self::selectRandomContribution($contributionsForCadavre);
+
+                self::assignRandomContributionToPlayer($idJoueur, $randomContribution);
+            }
 
             return self::getContributionByPlayer($idJoueur);
         }
     }
 
+    /**
+     * Récupère les contributions associées à un cadavre donné.
+     *
+     * @param [type] $cadavreId
+     * @return array|false Les contributions du cadavre ou false en cas d'erreur.
+     */
     public static function getContributionsForCadavre($cadavreId)
     {
         $sql = "SELECT id_contribution, texte_contribution, id_cadavre FROM contribution WHERE id_cadavre = :cadavreId";
@@ -72,13 +81,25 @@ class Joueur extends Model
         return $sth->fetchAll();
     }
 
+    /**
+     * Sélectionne une contribution aléatoire parmi les contributions disponibles.
+     *
+     * @param [type] $contributions
+     * @return array|false La contribution aléatoire sélectionnée ou false en cas d'erreur.
+     */
     public static function selectRandomContribution($contributions)
     {
-        // Sélectionnez une contribution aléatoire parmi les contributions disponibles
         $randomIndex = array_rand($contributions);
         return $contributions[$randomIndex];
     }
 
+    /**
+     * Vérifie si le joueur a déjà reçu une contribution spécifique.
+     *
+     * @param [type] $joueurId
+     * @param [type] $contributionId
+     * @return bool True si le joueur a reçu la contribution, sinon false.
+     */
     public static function hasPlayerReceivedContribution($joueurId, $contributionId)
     {
         $sql = "SELECT COUNT(*) as count FROM contribution_aléatoiree WHERE id_joueur = :joueurId AND num_contribution = :contributionId";
@@ -92,7 +113,13 @@ class Joueur extends Model
         return $result['count'] > 0;
     }
 
-
+    /**
+     * Attribue une contribution aléatoire à un joueur.
+     *
+     * @param [type] $joueurId
+     * @param [type] $contribution
+     * @return void
+     */
     public static function assignRandomContributionToPlayer($joueurId, $contribution)
     {
         $sql = "INSERT INTO contribution_aléatoiree (id_joueur, id_cadavre, num_contribution) VALUES (:joueurId, :id_cadavre, :num_contribution)";
@@ -103,6 +130,12 @@ class Joueur extends Model
         $sth->execute();
     }
 
+    /**
+     * Récupère la contribution actuelle d'un joueur.
+     *
+     * @param [type] $joueurId
+     * @return array|false La contribution actuelle du joueur ou false en cas d'erreur.
+     */
     public static function getContributionByPlayer($joueurId)
     {
         $sql = "SELECT c.*, ca.id_cadavre
@@ -121,6 +154,11 @@ class Joueur extends Model
         return $sth->fetch();
     }
 
+    /**
+     * Vérifie s'il y a un cadavre en cours.
+     *
+     * @return array|false Les informations du cadavre en cours ou false s'il n'y a pas de cadavre en cours.
+     */
     public static function isCadavreInProgress()
     {
         $sql = "SELECT cadavre.*, contribution.* FROM cadavre
@@ -138,6 +176,13 @@ class Joueur extends Model
         }
     }
 
+    /**
+     * Vérifie si le joueur a déjà contribué à un cadavre spécifique.
+     *
+     * @param [type] $joueurId
+     * @param [type] $cadavreId
+     * @return bool True si le joueur a déjà contribué au cadavre, sinon false.
+     */
     public static function hasPlayerContributedToCadavre($joueurId, $cadavreId)
     {
         $sql = "SELECT COUNT(*) as count 
@@ -159,7 +204,11 @@ class Joueur extends Model
         }
     }
 
-
+    /**
+     * Récupère l'ordre de soumission actuel.
+     *
+     * @return array|false Les informations sur l'ordre de soumission ou false en cas d'erreur.
+     */
     public static function getOrder()
     {
         $sql = "SELECT MAX(ordre_soumission) AS last_order, ca.id_cadavre
@@ -171,6 +220,14 @@ class Joueur extends Model
 
         return $sth->fetchAll();
     }
+
+    /**
+     * Ajoute une nouvelle contribution.
+     *
+     * @param [type] $joueurId
+     * @param [type] $texteContribution
+     * @return void
+     */
     public static function addContribution($joueurId, $texteContribution)
     {
         $order = self::getOrder();
@@ -179,7 +236,6 @@ class Joueur extends Model
             $nouvelOrdre = $order[0]['last_order'] + 1;
             $cadavreId = $order[0]['id_cadavre'];
 
-            // Insérer la contribution dans la table contribution
             $sql = "INSERT INTO contribution (texte_contribution, date_soumission, ordre_soumission, id_joueur, id_cadavre)
                 VALUES (:texte_contribution, NOW(), :nouvel_ordre, :joueurId, :cadavreId)";
             $sth = self::$dbh->prepare($sql);
@@ -189,13 +245,19 @@ class Joueur extends Model
             $sth->bindParam(':cadavreId', $cadavreId);
             $sth->execute();
 
-            // Mettre à jour le nombre de contributions dans la table cadavre
             $sql = "UPDATE cadavre SET nb_contributions = nb_contributions + 1 WHERE id_cadavre = :cadavreId";
             $sth = self::$dbh->prepare($sql);
             $sth->bindParam(':cadavreId', $cadavreId);
             $sth->execute();
         }
     }
+
+    /**
+     * Récupère les contributions d'un ancien cadavre.
+     *
+     * @param [type] $idCadavre
+     * @return array|false Les contributions de l'ancien cadavre ou false en cas d'erreur.
+     */
     public static function getContributionsOfOldCadavre($idCadavre)
     {
         $sql = "(
@@ -220,6 +282,12 @@ class Joueur extends Model
         return $sth->fetchAll();
     }
 
+    /**
+     * Récupère un ancien cadavre avec ses contributions.
+     *
+     * @param [type] $id
+     * @return array|false Les informations de l'ancien cadavre et ses contributions ou false en cas d'erreur.
+     */
     public static function getOldCadavreWithContributions($id)
     {
         $sql = 'SELECT a.*

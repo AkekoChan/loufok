@@ -1,0 +1,25 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  height: 100vh;
+}
+
+.error__img {
+  width: 80%;
+  height: auto;
+}
+.error__img img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.625rem;
+}
+
+.error__message {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+}

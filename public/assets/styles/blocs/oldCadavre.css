@@ -1,0 +1,29 @@
+.oldCadavre {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.oldCadavre .backLink {
+  text-align: center;
+}
+
+.contributionList,
+.contribution__wrapper,
+.thanks__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.tanks__list {
+  column-count: 2;
+}
+
+.tanks__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.125rem;
+}

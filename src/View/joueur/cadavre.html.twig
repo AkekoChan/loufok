@@ -7,8 +7,8 @@
 
 	<link href="/assets/styles/main.css" rel="stylesheet" type="text/css"/>
 	<header class="header">
-		<div class="header__user">Bienvenue,
-			<span class="header_user--bold">{{player.nom_plume}}</span>
+		<div class="header__user">Bienvenue,<br>
+			<span class="header__user--bold">{{player.nom_plume}}</span>
 		</div>
 		<p class="header__nameApp">Loufok</p>
 		<nav class="header__nav">
@@ -40,15 +40,13 @@
 					</p>
 				</div>
 
-				<ul>
+				<ul class="contribution__list">
 					{% for cadavreContribution in sortedContributions %}
 						{% if cadavreContribution.id_contribution == contribution.id_contribution or cadavreContribution.id_joueur == player.id_joueur %}
-							{# Il s'agit de la contribution aléatoire #}
-							<li class="contribution__itemText">
+							<li class="contributionText">
 								<p>{{ cadavreContribution.texte_contribution }}</p>
 							</li>
 						{% else %}
-							{# Les autres contributions masquées par une ligne horizontale ou autre style #}
 							<li class="contribution__itemLine">
 								<svg width="104" height="23" viewbox="0 0 104 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M19.2077 22.0892C33.927 24.4031 41.6501 20.9303 44.8707 17.311C46.7988 15.1442 45.0834 11.9956 42.1878 12.1618C38.8815 12.3515 35.7481 14.3067 33.8299 16.912C31.5935 19.9493 28.024 20.9387 26.5188 21.0538C9.14426 22.0202 1.93354 7.42059 0.5 0C1.53215 14.496 13.4019 20.7661 19.2077 22.0892Z" fill="#28292D"/>
@@ -57,14 +55,15 @@
 							</li>
 						{% endif %}
 					{% endfor %}
-
-					{% if hasPlayed == false %}
-						<form class="form" method="POST" action="{{ url('/joueur/add/' ~ player.id_joueur ) }}">
-							<textarea class="form__textarea" name="new_contribution" required maxlength="280" minlength="50" placeholder="Ecriver la suite de ce cadavre exquis"></textarea>
-							<button class="form__btn" type="submit">Soumettre votre cadavre exquis</button>
-						</form>
-					{% endif %}
 				</ul>
+				{% if hasPlayed == false %}
+
+					<form class="form" method="POST" action="{{ url('/joueur/add/' ~ player.id_joueur ) }}">
+						<h3 class="title__smaller">A votre tour de jouer !</h3>
+						<textarea class="form__textarea" name="new_contribution" required maxlength="280" minlength="50" placeholder="Ecriver la suite de ce cadavre exquis"></textarea>
+						<button class="form__btn" type="submit">Soumettre votre cadavre exquis</button>
+					</form>
+				{% endif %}
 			</section>
 		{% else %}
 			<section class="error">
@@ -75,5 +74,12 @@
 				<p class="error__message">{{errorMessage}}</p>
 			</section>
 		{% endif %}
+
+		<button class="scroll__btn">
+			<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 24 24"><path fill="currentColor" d="M13 20h-2V8l-5.5 5.5l-1.42-1.42L12 4.16l7.92 7.92l-1.42 1.42L13 8v12Z"/></svg>
+		</button>
 	</main>
+{% endblock %}
+{% block js %}
+	<script src="{{ url('/assets/js/scrollToTop.js') }}"></script>
 {% endblock %}

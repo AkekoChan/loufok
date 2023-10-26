@@ -4,10 +4,15 @@
 {% endblock %}
 {% block content %}
 	<main>
-		<div>
-			<h1>Zut</h1>
-			<p class="message">{{ message }}</p>
-			<a href="/">Revenir sur la page d'accueil</a>
+		<link href="/assets/styles/main.css" rel="stylesheet" type="text/css"/>
+		<section class="error">
+			<picture class="error__img">
+				<source srcset="/assets/img/dali.webp" type="image/webp">
+				<img src="/assets/img/dali.jpeg" alt="Salvador Dali qui nous regarde avec des grands yeux" loading="lazy">
+			</picture>
+			<h1 class="title__bigger">Zut</h1>
+			<p class="error__message">{{ message }}</p>
+			<a class="backLink" href="/">Revenir sur la page d'accueil</a>
 		</div>
 	</main>
 {% endblock %}

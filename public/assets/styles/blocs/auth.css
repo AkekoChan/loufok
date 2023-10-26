@@ -1,0 +1,38 @@
+.auth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+
+  /* & > * {
+    flex: 1 33.33%;
+  } */
+}
+.auth__top {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 70%;
+}
+
+.auth__title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.auth__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.auth__bottom .title__smaller {
+  text-align: center;
+}
+
+.auth__bottom form input:first-child {
+  margin-bottom: 1.25rem;
+}

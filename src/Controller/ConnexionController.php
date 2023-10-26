@@ -12,6 +12,11 @@ use App\Model\Connexion;
 class ConnexionController extends Controller
 {
 
+    /**
+     * Affiche la page de connexion et gère l'authentification de l'utilisateur.
+     *
+     * @return void
+     */
     public function index()
     {
         $errorMessage = null;
@@ -43,6 +48,11 @@ class ConnexionController extends Controller
         );
     }
 
+    /**
+     * Déconnecte l'utilisateur en réinitialisant les sessions et le redirige vers la page d'accueil.
+     *
+     * @return void
+     */
     public function disconnect()
     {
         $_SESSION['role'] = NULL;
