@@ -54,8 +54,9 @@ class Joueur extends Model
             $cadavreId = $cadavreInProgress[0]['id_cadavre'];
 
             $contributionsForCadavre = self::getContributionsForCadavre($cadavreId);
+            $hasPlayerReceivedContribution = self::hasPlayerReceivedContribution($idJoueur, $cadavreId);
 
-            if (self::hasPlayerReceivedContribution($idJoueur, $cadavreId)) {
+            if (!$hasPlayerReceivedContribution) {
                 $randomContribution = self::selectRandomContribution($contributionsForCadavre);
 
                 self::assignRandomContributionToPlayer($idJoueur, $randomContribution);
@@ -100,12 +101,12 @@ class Joueur extends Model
      * @param [type] $contributionId
      * @return bool True si le joueur a reçu la contribution, sinon false.
      */
-    public static function hasPlayerReceivedContribution($joueurId, $contributionId)
+    public static function hasPlayerReceivedContribution($joueurId, $idCadavre)
     {
-        $sql = "SELECT COUNT(*) as count FROM contribution_aléatoiree WHERE id_joueur = :joueurId AND num_contribution = :contributionId";
+        $sql = "SELECT COUNT(*) as count FROM contribution_aléatoiree WHERE id_joueur = :joueurId AND id_cadavre = :cadavreId";
         $sth = self::$dbh->prepare($sql);
         $sth->bindParam(':joueurId', $joueurId);
-        $sth->bindParam(':contributionId', $contributionId);
+        $sth->bindParam(':cadavreId', $idCadavre);
         $sth->execute();
 
         $result = $sth->fetch();
@@ -286,7 +287,7 @@ class Joueur extends Model
      * Récupère un ancien cadavre avec ses contributions.
      *
      * @param [type] $id
-     * @return array|false Les informations de l'ancien cadavre et ses contributions ou false en cas d'erreur.
+     * @return array|null Les informations de l'ancien cadavre et ses contributions ou null.
      */
     public static function getOldCadavreWithContributions($id)
     {
@@ -302,6 +303,11 @@ class Joueur extends Model
         $sth->execute();
 
         $cadavre = $sth->fetch();
+
+        if (!$cadavre) {
+            return null;
+        }
+
         $contributions = self::getContributionsOfOldCadavre($cadavre['id_cadavre']);
 
         $data = array(

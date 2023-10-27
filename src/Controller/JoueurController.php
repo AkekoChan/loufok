@@ -95,6 +95,9 @@ class JoueurController extends Controller
         $player = Joueur::getInstance()->getPlayer($idJoueur);
         $data = Joueur::getInstance()->getOldCadavreWithContributions($idJoueur);
 
+        if (!$data) {
+            HTTP::redirect("/joueur/{$idJoueur}");
+        }
 
         $this->display('joueur/old_cadavre.html.twig', [
             'data' => $data,
