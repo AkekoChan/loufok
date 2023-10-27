@@ -25,6 +25,6 @@ L'application Loufok offre une expérience ludique et littéraire collaborative,
 - Se connecter
   - en tant que joueur
   - en tant que administrateur
-- Créer un cadavre exquis à la fois pour les administrateurs pour que les joueurs puissent y participer.
+- Créer un cadavre exquis par les administrateurs pour que les joueurs puissent y participer.
 - Voir en tant que joueur le cadavre en cours et y participer
 - Voir en tant que joueurs son ancienne participation
